@@ -1,0 +1,279 @@
+*{
+    padding :0;
+    margin:0;
+}
+body{
+    background:url(bg\ \(2\).jpg);
+    font-family:'poppins',sans-serif;
+    color: white;
+}
+
+   .navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    position:sticky;
+    top:0;
+    font-weight: 500;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   }
+   .navbar-links{
+    display: flex;
+    column-gap: 20px;
+   }
+   .navbar-links a{
+     text-decoration: none;
+     color:white;
+   }
+   .navbar-links a:hover{
+    text-decoration:underline;
+   }
+   .navbar-menu-toggle{
+      display: none;
+   }
+
+   .side-navbar{
+    background-color: #1D232C;
+    width:50%;
+    height:100%;
+    position : fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    color:white;
+    transition: 2s;
+
+   }
+   .side-navbar-link{
+    margin-bottom:30px;
+   }
+   .side-navbar-links a{
+    text-decoration: none;
+    color:white;
+   }
+   .side-navbar-links a:hover{
+        text-decoration: underline;
+   }
+   /*Header*/
+    .header{
+        display: flex;
+        justify-content:center;
+        gap: 50px;
+        padding: 50px;
+    }
+    .headerbtn{
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        background-color:black ;
+        color:white;
+    }
+    .servicecontainer-1{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .servicecontainer-2{
+       display: flex;
+       justify-content:space-between ;
+       align-items: center;
+       gap: 20px; 
+    }
+    .servicecontainer-2 div{
+        background-color:darkcyan;
+        border-radius:5px ;
+        padding: 10px;
+    }
+    .newarrival{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    } 
+    .newarrival-container{
+        position: relative;
+        flex-basis: 20%;
+    }
+    .newarrival button{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:5px;
+        padding-bottom: 10px;
+        color:#1D232C;
+        position: absolute;
+        top:50%;
+        left:18%;
+        border-radius: 10px;
+        border: black;
+
+    }
+    .news{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .news input{
+        padding: 11px;
+        width: 84vw;
+        margin-bottom: 10px;
+        border: solid black 3px;
+    }
+    .news button{
+        margin-top: 10px;
+        color:#F2F4F7;
+        background-color:#1D232C;
+    }
+   .footer{
+    margin-top:20px;
+    padding:40px;
+    background-color: #1D232C;
+    color: whitesmoke;
+   }
+.product-section{
+    margin-top:20px;
+}
+.product-search{
+    width:80%;
+    border:solid black 2px;
+    border-radius:20px;
+    display:flex;
+    justify-content: center  ;
+    align-items: center;
+    padding:10px;
+    margin:auto;
+}
+.product-search input{
+   border:none;
+   background-color:transparent; 
+   width:100%;
+   color: #F2F4F7;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding:20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img{
+    border-radius: 10px;
+}
+
+.contact-style{
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("bg\ \(2\).jpg") no-repeat center center/cover;
+}
+.contact-style form{
+    width:670px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.contact-style form h1{
+    color: white;
+    font-weight: 500;
+    margin-top: 60px;
+    width: 500px;
+    text-align:center;
+}
+.contact-style form input{
+    width:290px;
+    height:40px;
+    padding-left:10px;
+    outline: none;
+    border:none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background:none;
+    border-bottom:2px solid #fff;
+}
+.contact-style form input::placeholder{
+    color: #fff;
+
+}
+.contact-style form #last Name,
+.contact-style form #mobile{
+    margin-left: 20px;
+}
+.contact-style form h4{
+    color: #fff;
+    font-size: 300;
+    width: 600px;
+    margin-top:20px
+}
+.contact-style form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+    width:1em;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+.contact-style form #button{
+    border:none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color:#1D232C;
+    width: 100px;
+    padding: 0;
+    margin-right:500px;
+    margin-bottom:30px;
+    transition: 0.3s;
+}
+.contact-style form #button:hover{
+    opacity: 0.7;
+}
+
+
+   @media  screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-links{
+        display:none;
+    }
+    .header-image{
+        display: none;
+    }
+    .servicecontainer-1{
+        display: none;
+    }
+    .servicecontainer-2{
+        flex-direction:column ;
+    }
+   }
